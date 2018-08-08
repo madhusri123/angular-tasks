@@ -7,11 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'scenario1';
- private text="";
+ private values="";
+
+
  
- OnClickMe(text) {
-     console.log(text);
-   }
+  onKey(value: string) {
+    this.values += value;
+   // console.log(this.values);
+  }
+  
+ 
+//  OnClickMe(text) {
+//      console.log(text);
+//    }
 
   
   
